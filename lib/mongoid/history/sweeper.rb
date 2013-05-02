@@ -1,5 +1,6 @@
+require 'rails/observers/active_model/active_model'
 module Mongoid::History
-  class Sweeper < Mongoid::Observer
+  class Sweeper < ActiveModel::Observer
     def controller
       Thread.current[:mongoid_history_sweeper_controller]
     end

@@ -1,8 +1,10 @@
 source "http://rubygems.org"
 
 gem "easy_diff"
-gem "mongoid", "> 3.0"
-gem "activesupport"
+gem "mongoid", github: 'mongoid/mongoid'
+gem "activesupport", "~> 4.0.0.rc1"
+gem "rails-observers", github: 'rails/rails-observers'
+gem "rails", "~> 4.0.0.rc1"
 
 group :test do
   gem "rspec", "~> 2.11.0"

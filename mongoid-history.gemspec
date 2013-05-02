@@ -54,17 +54,23 @@ Gem::Specification.new do |s|
 
     if Gem::Version.new(Gem::VERSION) >= Gem::Version.new('1.2.0') then
       s.add_runtime_dependency(%q<easy_diff>, [">= 0"])
-      s.add_runtime_dependency(%q<mongoid>, ["> 3.0"])
-      s.add_runtime_dependency(%q<activesupport>, [">= 0"])
+      s.add_runtime_dependency(%q<mongoid>, [">= 0"])
+      s.add_runtime_dependency(%q<activesupport>, ["~> 4.0.0.rc1"])
+      s.add_runtime_dependency(%q<rails-observers>, [">= 0"])
+      s.add_runtime_dependency(%q<rails>, ["~> 4.0.0.rc1"])
     else
       s.add_dependency(%q<easy_diff>, [">= 0"])
-      s.add_dependency(%q<mongoid>, ["> 3.0"])
-      s.add_dependency(%q<activesupport>, [">= 0"])
+      s.add_dependency(%q<mongoid>, [">= 0"])
+      s.add_dependency(%q<activesupport>, ["~> 4.0.0.rc1"])
+      s.add_dependency(%q<rails-observers>, [">= 0"])
+      s.add_dependency(%q<rails>, ["~> 4.0.0.rc1"])
     end
   else
     s.add_dependency(%q<easy_diff>, [">= 0"])
-    s.add_dependency(%q<mongoid>, ["> 3.0"])
-    s.add_dependency(%q<activesupport>, [">= 0"])
+    s.add_dependency(%q<mongoid>, [">= 0"])
+    s.add_dependency(%q<activesupport>, ["~> 4.0.0.rc1"])
+    s.add_dependency(%q<rails-observers>, [">= 0"])
+    s.add_dependency(%q<rails>, ["~> 4.0.0.rc1"])
   end
 end
 
